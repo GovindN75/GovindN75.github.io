@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Govind Nair</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
+</head>
+
+<body data-spy="scroll" data-target="#responsiveNavbar">
+
+	<!-- Begin Home Section -->
+	<div id="home">
+		<!-- Begin Navigation Bar -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="index.html">Govind Nair</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNavbar">
+				<span class="navbar-toggler-icon"></span></span>
+			</button>
+			<div class="collapse navbar-collapse" id="responsiveNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home"> Home </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about"> About Me </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects"> Projects </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact"> Contact Me </a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navigation Bar -->
+
+		<!-- Start Main Content on Home Page -->
+		<div class="main-content">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+		<div class="caption text-center">
+			<h2>Hey There! I am Govind Nair</h2>
+			<h4><span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
+			<a href="#about">
+				<div class="arrow"></div>
+			</a>
+		</div>
+		<!-- End Main Content on Home Page -->
+	</div>
+	<!-- End Home Section -->
+
+
+	<!-- Begin About Section -->
+	<div id="about" class="about-content">
+		<div class="about-wrapper">
+			<div class="about-inner">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="description col-md-6 col-sm-4 col-xs-12">
+ 
+					<h2>Hi, I'm Govind</h2>
+					<p>
+						I'm currently an incoming 1A CS student at the University of Waterloo.
+						I love all things related to technology but am most interested in Machine Learning, 
+						AI and AI in games. The idea of a bunch of 1's and 0's playing games is fascinating to me. 
+						I am currently exploring Reinforcement Learning and Unity Game Development. I also enjoy 
+						competitive programming and often solve problems on Leetcode and Codeforces.
+						<br>
+						<br>
+						When I'm not coding, I like to work out, practice Karate(I'm a black belt), play video games and watch Netflix. I currently play 
+						a lot of Valorant and Overwatch with my friends. Working out is something I picked when I realized
+						I was letting go of myself and decided to make a change. Since then I have fallen in love with the gym
+						and all the perks that come with it. My favourite Netflix show is Brooklyn Nine-Nine.
+					</p>
+					<a href=""><i class="fab fa-instagram fa-2x"></i></a>
+
+				</div>
+			</div>
+		</div>
+		<div class="skills-sec">
+			<div id="skill-wrap">
+				<h1>Skills</h1>
+				<div class="text-left">
+
+					<h5 data-aos="fade-down"> Java</h5><div class="skillbar-container clearfix" data-percent="95%">
+					  <div class="skills bg-color"></div>
+					</div>
+					Python(Tensorflow and Keras included)<div class="skillbar-container clearfix" data-percent="95%">
+						<div class="skills bg-color"></div>
+					  </div>
+					C++<div class="skillbar-container clearfix" data-percent="95%">
+					<div class="skills bg-color"></div>
+					</div>
+					HTML<div class="skillbar-container clearfix" data-percent="95%">
+						<div class="skills bg-color"></div>
+					  </div>
+					CSS<div class="skillbar-container clearfix" data-percent="95%">
+					<div class="skills bg-color"></div>
+					</div>
+					Docker<div class="skillbar-container clearfix" data-percent="95%">
+					<div class="skills bg-color"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End About Section -->
+
+
+	<!-- Begin Projects Section -->
+	<div id="projects" class="offset">
+
+	</div>
+	<!-- End Projects Section -->
+
+
+	<!-- Begin Contact Section -->
+	<div id="contact" class="offset">
+
+	</div>
+	<!-- End Contact Section -->
+
+
+
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--- End of Script Source Files -->
+
+<script>
+	const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Programmer", "ML/AI Enthusisast", "Incoming 1A CS student at UWaterloo", " Aspiring Entrepreuneur"];
+const typingDelay = 100;
+const erasingDelay = 100;
+const newTextDelay = 1000 ; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script>
+<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+	
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+	
+		  // Store hash
+		  var hash = this.hash;
+	
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	<script>
+		 $(window).scroll(function() {
+    var hT = $('#skill-wrap').offset().top,
+        hH = $('#skill-wrap').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT+hH-1.4*wH)){
+        jQuery(document).ready(function(){
+            jQuery('.skillbar-container').each(function(){
+                jQuery(this).find('.skills').animate({
+                    width:jQuery(this).attr('data-percent')
+                }, 2000); 
+            });
+        });
+    }
+ });
+	</script>
+	<script>
+		AOS.init();
+	  </script>
+
+</body>
+</html>
+
+
+
