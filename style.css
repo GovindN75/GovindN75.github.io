@@ -95,18 +95,6 @@ body{
   margin-top:0;
 }
 
-#contact{
-  padding-top: 5vh;
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-origin: center;
-  background: #a8ff78;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-}
 
 span.typed-text {
   font-weight: normal;
@@ -157,8 +145,10 @@ span.cursor.typing {
   background: rgba(42, 41, 41, 0);
   display: inline-block;
   display: -moz-inline-stack;
-  width: 50px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  margin-left: 23px;
+  margin-right: 10px;
   box-sizing: border-box;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
@@ -250,47 +240,21 @@ span.cursor.typing {
   -webkit-tap-highlight-color: transparent;
   transform: translateZ(0);
   box-shadow: 0 0 1px transparent;
+  transition: all 0.35s ease-in-out;
 }
 
 .btn-anim:hover {
-  transform: scale(1.2);
+  background-color: #ffa751;
 }
 
+#projects{
+  padding: 90px 0 80px;
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-  
-}
-.overlayTxt {
-  color: white;
-  font-size: 1.3vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.projButton {
-  transition: .5s all;
-  
 }
 
-.projButton:hover .overlay {
-  opacity: 1;
-}
 
 #portfolio-img .mix{
   display: none;
@@ -309,7 +273,7 @@ span.cursor.typing {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 2px 0;
+  margin: 5px 0 5px 0;
   min-width: 358px;
   max-width: 358px;
   max-height: 290px;
@@ -322,8 +286,7 @@ span.cursor.typing {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  color: #131313;
-  margin: 8px 5px;
+  color: #ffffff;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
@@ -335,29 +298,33 @@ span.cursor.typing {
 .proj-desc *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .proj-desc:before {
   position: absolute;
-  background-color: #fff;
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   content: "";
   opacity: 0;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .proj-desc img {
   max-width: 100%;
   vertical-align: top;
 }
+
 
 .proj-desc figcaption {
   position: absolute;
@@ -378,8 +345,8 @@ span.cursor.typing {
 .proj-desc:hover:before,
 .proj-desc.hover:before {
   opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
 }
 
 .proj-desc:hover figcaption,
@@ -387,4 +354,71 @@ span.cursor.typing {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
   opacity: 1;
+}
+
+@media only screen and (min-width:300px) and (max-width: 640px) {
+  #portfolio {
+		padding: 70px 0 60px;
+	}
+  .grid figure {
+		padding: 0;
+		margin: 0;
+		min-width: 100%;
+		max-width: 100%;
+		max-height: 100%;
+		width: 48%;
+	}
+
+}
+
+@media only screen and (min-width: 766px) and (max-width: 1024px) {
+  .grid figure {
+		margin: 2px;
+		padding: 0;
+		min-width: 90%;
+		max-width: 90%;
+		max-height: 90%;
+		width: 48%;
+	}
+
+}
+
+#contact{
+  padding: 116px 0 95px;
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.heading{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 45px;
+  padding-top: -20px;
+}
+
+#contact .container{
+  background-color: transparent;
+}
+
+.btn-info{
+  width: 30%;
+  letter-spacing: 1px;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-info:hover{
+  transform: scale(1.05);
+  background-color: black;
+}
+
+.icn{
+  font-family: monospace;
+  font-size: 17px;
+}
+
+hr{
+  width: 80%;
 }
