@@ -4,6 +4,14 @@ body{
   overflow-x: hidden;
   font-family: 'Baloo Tamma 2', cursive;
 }
+#home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+}
 
 .navbar{
   text-transform: uppercase;
@@ -249,21 +257,18 @@ span.cursor.typing {
 
 #projects{
   padding: 90px 0 80px;
-  background: #ffe259;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 
-#portfolio-img .mix{
-  display: none;
-}
 
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 1em;
   max-width: 1000px;
   list-style: none;
   text-align: center;
@@ -273,7 +278,7 @@ span.cursor.typing {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 5px 0 5px 0;
+  margin: 2px 0;
   min-width: 358px;
   max-width: 358px;
   max-height: 290px;
@@ -282,49 +287,47 @@ span.cursor.typing {
   cursor: pointer;
 }
 
-.proj-desc{
+.proj-desc {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  color: #ffffff;
+  color: #131313;
+  margin: 8px 5px;
   min-width: 230px;
   max-width: 315px;
   width: 100%;
   line-height: 1.2em;
   text-align: center;
 }
+
 .proj-desc *,
 .proj-desc *:before,
 .proj-desc *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .proj-desc:before {
   position: absolute;
-  background: #1F1C2C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  background-color: #fff;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
   content: "";
   opacity: 0;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
 
 .proj-desc img {
   max-width: 100%;
   vertical-align: top;
 }
-
 
 .proj-desc figcaption {
   position: absolute;
@@ -341,12 +344,11 @@ span.cursor.typing {
 }
 
 
-
 .proj-desc:hover:before,
 .proj-desc.hover:before {
   opacity: 1;
-  -webkit-transform: scale(1.0);
-  transform: scale(1.0);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .proj-desc:hover figcaption,
@@ -356,8 +358,9 @@ span.cursor.typing {
   opacity: 1;
 }
 
+
 @media only screen and (min-width:300px) and (max-width: 640px) {
-  #portfolio {
+  #projects {
 		padding: 70px 0 60px;
 	}
   .grid figure {
@@ -368,7 +371,6 @@ span.cursor.typing {
 		max-height: 100%;
 		width: 48%;
 	}
-
 }
 
 @media only screen and (min-width: 766px) and (max-width: 1024px) {
@@ -380,8 +382,20 @@ span.cursor.typing {
 		max-height: 90%;
 		width: 48%;
 	}
+} 
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .grid figure {
+		margin: 2px;
+		padding: 0;
+		min-width: 90%;
+		max-width: 90%;
+		max-height: 90%;
+		width: 48%;
+	}
 }
+
+
 
 #contact{
   padding: 116px 0 95px;
