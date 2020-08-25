@@ -535,6 +535,7 @@ span.cursor.typing {
   .grid figcaption h5{
     font-size: 14px;
   }
+
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
   .grid figcaption h4{
@@ -552,8 +553,8 @@ span.cursor.typing {
 #contact{
   padding: 116px 0 95px;
   background: #2193b0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
