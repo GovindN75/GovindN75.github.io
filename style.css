@@ -589,3 +589,49 @@ span.cursor.typing {
 hr{
   width: 80%;
 }
+
+#footer {
+  padding: 20px 0 27px;
+  background-color: #333;
+  font-family: "Work Sans", sans-serif;
+}
+
+
+#footer p {
+  color: #131313;
+  font-size: 1.3em;
+
+}
+
+.footer-icons{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-icons li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+}
+
+.footer-icons li a{
+  color: white;
+  background: rgba(42, 41, 41, 0);
+  font-size: 1.3em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  padding: 10px 10px 8px 10px;
+  box-sizing: border-box;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  margin-bottom: 0;
+}
+
+.footer-icons li a:hover{
+  color: #a200ff;
+  transform: scale(1.3);
+}
