@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Govind Nair</title>
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Govind Nair</title>
+    <link rel="stylesheet" href="./assets/bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body data-spy="scroll" data-target="#responsiveNavbar">
-
-	<!-- Begin Home Section -->
-	<div id="home">
-        <!-- Begin Navigation Bar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <body data-spy="scroll" data-target="#responsiveNavbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="index.html">Govind Nair</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveNavbar">
                 <span class="navbar-toggler-icon"></span></span>
@@ -37,594 +36,605 @@
                 </ul>
             </div>
         </nav>
-        <!-- End Navigation Bar -->
 
-        <!-- Start Main Content on Home Page -->
-        <div class="main-content">
-            <div class="home-wrap">
-                <div class="home-inner">
+        <!-- START HOME PAGE -->
+        <div id="home" class="text-center min-vh-100">
+            <div class="container-fluid">
+                <div class="row h-75">
+                    <div class="home-content">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 d-flex justify-content-center">
+                            <div class="my-auto mx-auto" style="text-align: center;">
+                                <h2>Hello! I'm Govind Nair</h3>
+                                <h4><span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12">
+                        <div class="arrow bounce">
+                            <a role="button" href="#about"><i  class="fa fa-arrow-down fa-2x" style="color: #fff;"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="caption text-center">
-            <h2>Hey There! I am Govind Nair</h2>
-            <h4><span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
-            <a href="#about">
-                <div class="container">
-                    <div class="row">
-                        <div class="arrow"></div>
+        <!--END HOME PAGE-->
+        
+        <!-- START ABOUT PAGE -->
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 description">
+                        <h2>Hi, I'm Govind</h2>
+                        <p>
+                            I'm currently an incoming 1A CS student at the University of Waterloo.
+                            I love all things related to technology but am most interested in Machine Learning,
+                            AI and AI in games. The idea of a bunch of 1's and 0's playing games is fascinating to me.
+                            I am currently exploring Reinforcement Learning and Unity Game Development. I also enjoy
+                            competitive programming and often solve problems on Leetcode and Codeforces.
+                            <br>
+                            <br>
+                            When I'm not coding, I like to work out, practice Karate(I'm a black belt), play video games and watch Netflix.
+                            I currently play
+                            a lot of Valorant and Overwatch with my friends. Working out is something I picked when I realized
+                            I was letting go of myself and decided to make a change. Since then I have fallen in love with the gym
+                            and all the perks that come with it. My favourite Netflix show is Brooklyn Nine-Nine.
+                        </p>
+                        <ul class="socials">
+                            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    
+                        </ul>
+                    </div>
+
+                    <div id="skills" class="skill col-md-6 col-sm-6 col-xs-12 col-12 justify-content-around">
+                        <div class="row">
+                            <div class="skillbar clearfix " data-percent="85%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#javaModal"><span
+                                        class="btn btn-anim">Java</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                            <div class="skillbar clearfix " data-percent="80%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#pythonModal">
+                                    <span class="btn btn-anim">Python</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                            <div class="skillbar clearfix " data-percent="75%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#cppModal"><span
+                                        class="btn btn-anim">C++</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                            <div class="skillbar clearfix " data-percent="60%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#htmlModal"><span
+                                        class="btn btn-anim">HTML5</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                    
+                            <div class="skillbar clearfix " data-percent="58%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#cssModal"><span
+                                        class="btn btn-anim">CSS</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                            <div class="skillbar clearfix " data-percent="43%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#csModal"><span
+                                        class="btn btn-anim">C#</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                            <div class="skillbar clearfix " data-percent="43%">
+                                <div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#dockerModal">
+                                    <span class="btn btn-anim">Docker</span></div>
+                                <div class="skillbar-bar" style="background: #e67e22;"></div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <div class="modal fade" id="javaModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="javaModal" style="color:black;"><b>Java</b> <i class="fab fa-java fa-lg"
+                                        style="color:red; font-weight: bold;"></i></h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    The language that pulled me into the world of coding and made me
+                                                    fall in love with programming. Java is the first language I learned
+                                                    through my grade 11 CS course. Since then, I have used it throughout my grade 12 CS
+                                                    course,
+                                                    for competitive programming, and to create various projects for my classes.
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END JAVA MODAL -->
+                    
+                    <!-- START PYTHON MODAL -->
+                    <div class="modal fade" id="pythonModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="pythonModal" style="color:black;"><b>Python</b> <i class="fab fa-python fa-lg"
+                                        style=" color: blue; ;"></i></h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    My current favourite language! Most of my development right now is in Python.
+                                                    I started learning Python due to my interest in Machine Learning and AI. I have
+                                                    experience in using the Tensorflow and Keras libraries and want to learn Pytorch
+                                                    in the future. I have created multiple Machine Learning and AI projects that
+                                                    you can view in the <a href="#projects" class="anim" data-dismiss="modal"> Projects
+                                                        tab.</a>
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PYTHON MODAL-->
+                    
+                    <!-- START CPP MODAL -->
+                    <div class="modal fade" id="cppModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="cppModal" style="color:black;"><b>C++</b> <i><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
+                                            style="width: 1.5em; height: 1.5em;"></i> </h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    C++ is my go to language when solving competitive programming questions on online judges
+                                                    such as DMOJ, Leetcode and Codeforces.
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CPP MODAL -->
+                    
+                    <!-- START HTML MODAL -->
+                    <div class="modal fade" id="htmlModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="htmlModal" style="color:black;"><b>HTML</b> <i class="fab fa-html5 fa-2x"
+                                        style="color:#ff9100;"></i> </h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    Although HTML isn't a programming language, it is a very important language
+                                                    to learn if you want to develop a website or make webapps. I used HTML, CSS along
+                                                    with the CSS framework Bootstrap, and, jQuery to create this website.
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END HTML MODAL -->
+                    
+                    
+                    
+                    <!-- START CSS MODAL-->
+                    <div class="modal fade" id="cssModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="cssModal" style="color:black;"><b>CSS</b> <i class="fab fa-css3-alt fa-2x"
+                                        style="color:#7dc7ff;"></i> </h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid>
+                    							  <div class=" row">
+                    
+                                        <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                            <p class="lead">
+                                                Once again, not a programming language but it is required to add some colour to
+                                                your websites and webapps.
+                                            </p>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- END CSS MODAL -->
+                    
+                    <!-- START CS MODAL -->
+                    <div class="modal fade" id="csModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="csModal" style="color:black;"><b>C#</b> <i style="color:#335b8a;"><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png"
+                                            style="width: 1.8em; height: 2em;"></i> </h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    C# is the most recent language I have been working with. I have been working with two of
+                                                    my other friends on a 3D FPS game that includes scripts that are written in the
+                                                    C# language. You can check the project out in the <a href="#projects" class="anim"
+                                                        data-dismiss="modal"> Projects tab.</a>
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CS MODAL -->
+                    
+                    <!-- START DOCKER MODAL -->
+                    <div class="modal fade" id="dockerModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header"">
+                    						  <h5 class=" modal-title" id="dockerModal" style="color:black;"><b>C#</b> <i class="fab fa-docker fa-lg"></i>
+                                    </h5>
+                                    <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                    
+                                            <div class="col-md-12 col-sm-12 col-xs-12 col-12">
+                                                <p class="lead">
+                                                    I started learning Docker at the start of summer because I am interested in DevOps.
+                                                    Although I haven't really used it in any project, I plan to dive into Full Stack
+                                                    Development soon
+                                                    and want to start testing out the power of Docker.
+                                                </p>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- END DOCKER MODAL -->
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT PAGE -->
+        <section id="projects">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 col-12" style="text-align: center;">
+                        <h1><b>My Work</b></h1>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/flappybird.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                                    <h3 class="wg-box-content-title">Flappy Bird AI</h3>
+                                    <p class="wg-box-content-text">I created this AI to play my rendition of Flappy Bird. It uses the pygame module and the NEAT algorithm.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/mnist.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                                    <h3 class="wg-box-content-title">Number Predictor</h3>
+                                    <p class="wg-box-content-text">This number predictor uses a CNN built with Tensorflow and Keras to classify digits drawn on a Tkinter GUI.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/visual.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                                    <h3 class="wg-box-content-title">Sorting Visualizer</h3>
+                                    <p class="wg-box-content-text">This sorting visualizer made with the Python language and Matplotlib helps one visualize a number of commonly used
+                                    sorting algorithms.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                 
+                </div>
+                <div class="row ">
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/battle.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom test">
+                                    <h3 class="wg-box-content-title" style="margin-top: 5%;">Battleship Project</h3>
+                                    <p class="wg-box-content-text">A grid based, Battleship inspired game written in Java. This project was created by a
+                                    friend and I as our final project for our Grade 12 CS class. Check out his portfolio <object><a href="https://danwei002.github.io/" target="_blank">here</a></object>  </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/codingbat.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                                    <h3 class="wg-box-content-title" style="margin-top: 4%;">Coding Bat Solutions</h3>
+                                    <p class="wg-box-content-text">A collection of all my solutions to the Java language questions on <object><a href="https://codingbat.com/java"
+                                            target="_blank">codingbat.com</a></object>. Solutions to the Python language questions coming soon.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4 mb-3">
+                        <div class="wg-box-content">
+                            <a href="#">
+                                <div class="wg-box-content-overlay"></div>
+                                <img class="wg-box-content-image"
+                                    src="./assets/img/unity.png">
+                                <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                                    <h3 class="wg-box-content-title">Unity Game</h3>
+                                    <p class="wg-box-content-text">A current work in progress. 2 of my friends and I are working on a FPS platformer game in the Unity Engine with scripts written in C#. Github page coming soon.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="heading">Contact Me!</h2>
+            <div class="container-fluid">
+        
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <input type="text" required="" placeholder="Name" name="text" class="form-control"><br>
+                            <input type="text" required="" placeholder="Email" name="email" class="form-control"><br>
+                            <textarea rows="6" placeholder="Message" required="" class="form-control"></textarea><br>
+                            <center>
+                                <button class="btn btn-info">Submit</button>
+                            </center>
+                            <br><br><br><br>
+                        </form>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <br>
+                        <p class="icn"><i class="fas fa-map-marker-alt fa-2x"></i> &nbsp;&nbsp; Toronto, ON, Canada </p>
+                        <p class="icn"><i class="fas fa-phone fa-2x"></i> &nbsp;&nbsp; +1 (647)-676-2835 </p>
+                        <p class="icn"><i class="fas fa-envelope fa-2x"></i> &nbsp;&nbsp; g4nair@uwaterloo.ca </p>
+                        <hr>
+                        <div class="media">
+                            <ul class="socials" style="font-size: 22px;">
+                                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                
-            </a>
-        </div>
-        <!-- End Main Content on Home Page -->
-    </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <ul class="footer-icons" style="text-align:center; padding-top: 1.2vh;">
+                            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+                        <p class="lead" style="font-size: 1rem; margin-top: 5%;">Made using:</p>
+                        <ul class="lead" style="font-size: 1rem; color: black; list-style-type: none; padding: 0;">
+                            <li><a href="https://getbootstrap.com/">Bootstrap 4.5.0</a></li>
+                            <li><a href="https://fontawesome.com/">FontAwesome Icons</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+                        <p class="lead" style="font-size: 1.3em; padding-top: 2.5vh;">Govind Nair</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-	<!-- End Home Section -->
-
-
-	<!-- Begin About Section -->
-	<section id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12 description">
-                    <h2>Hi, I'm Govind</h2>
-                    <p>
-                        I'm currently an incoming 1A CS student at the University of Waterloo.
-                        I love all things related to technology but am most interested in Machine Learning, 
-                        AI and AI in games. The idea of a bunch of 1's and 0's playing games is fascinating to me. 
-                        I am currently exploring Reinforcement Learning and Unity Game Development. I also enjoy 
-                        competitive programming and often solve problems on Leetcode and Codeforces.
-                        <br>
-                        <br>
-                        When I'm not coding, I like to work out, practice Karate(I'm a black belt), play video games and watch Netflix. I currently play 
-                        a lot of Valorant and Overwatch with my friends. Working out is something I picked when I realized
-                        I was letting go of myself and decided to make a change. Since then I have fallen in love with the gym
-                        and all the perks that come with it. My favourite Netflix show is Brooklyn Nine-Nine.
-					</p>
-					<ul class="socials">
-						<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-
-					</ul>
-				</div>
-				<div id="skills" class="skill col-md-6 col-sm-6 col-xs-12 col-12 justify-content-around">
-					<div class="row">
-						<div class="skillbar clearfix " data-percent="85%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#javaModal"><span class="btn btn-anim">Java</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div>
-						</div>
-
-						<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-title" style="background: #d35400;"data-toggle="modal" data-target="#pythonModal"><span class="btn btn-anim">Python</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div>
-						</div>	
-
-						<div class="skillbar clearfix " data-percent="75%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#cppModal"><span class="btn btn-anim">C++</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div>
-						</div>	
-						<div class="skillbar clearfix " data-percent="60%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#htmlModal"><span class="btn btn-anim">HTML5</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div></div>
-					
-
-						<div class="skillbar clearfix " data-percent="58%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#cssModal"><span class="btn btn-anim">CSS</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div></div>
-						
-						<div class="skillbar clearfix " data-percent="43%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#csModal"><span class="btn btn-anim">C#</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div></div>
-						
-						<div class="skillbar clearfix " data-percent="43%">
-						<div class="skillbar-title" style="background: #d35400;" data-toggle="modal" data-target="#dockerModal"><span class="btn btn-anim">Docker</span></div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div></div>
-										
-					</div>
-				</div>
-				<!-- START JAVA MODAL -->
-				<div class="modal fade" id="javaModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="javaModal" style="color:black;"><b>Java</b> <i class="fab fa-java fa-lg" style="color:red; font-weight: bold;"></i></h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-										The language that pulled me into the world of coding and made me 
-										fall in love with programming. Java is the first language I learned
-										through my grade 11 CS course. Since then, I have used it throughout my grade 12 CS course, 
-										for competitive programming, and to create various projects for my classes.
-									</p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END JAVA MODAL -->
-
-				<!-- START PYTHON MODAL -->
-				<div class="modal fade" id="pythonModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="pythonModal" style="color:black;"><b>Python</b> <i class="fab fa-python fa-lg" style=" color: blue; ;"></i></h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									My current favourite language! Most of my development right now is in Python. 
-									I started learning Python due to my interest in Machine Learning and AI. I have 
-									experience in using the Tensorflow and Keras libraries and want to learn Pytorch 
-									in the future. I have created multiple Machine Learning and AI projects that 
-									you can view in the <a href="#projects" class="anim" data-dismiss="modal" > Projects tab.</a>
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END PYTHON MODAL-->
-
-				<!-- START CPP MODAL -->
-				<div class="modal fade" id="cppModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="cppModal" style="color:black;"><b>C++</b> <i><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" style="width: 1.5em; height: 1.5em;"></i> </h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									C++ is my go to language when solving competitive programming questions on online judges
-									such as DMOJ, Leetcode and Codeforces.
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END CPP MODAL -->
-
-				<!-- START HTML MODAL -->
-				<div class="modal fade" id="htmlModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="htmlModal" style="color:black;"><b>HTML</b> <i class="fab fa-html5 fa-2x" style="color:#ff9100;"></i> </h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									Although HTML isn't a programming language, it is a very important language
-									to learn if you want to develop a website or make webapps. I used HTML, CSS along 
-									with the CSS framework Bootstrap, and, jQuery to create this website.
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END HTML MODAL -->
+        
 
 
-
-				<!-- START CSS MODAL-->
-				<div class="modal fade" id="cssModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="cssModal" style="color:black;"><b>CSS</b> <i class="fab fa-css3-alt fa-2x" style="color:#7dc7ff;"></i> </h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									Once again, not a programming language but it is required to add some colour to 
-									your websites and webapps.
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END CSS MODAL -->
-
-				<!-- START CS MODAL -->
-				<div class="modal fade" id="csModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="csModal" style="color:black;"><b>C#</b> <i style="color:#335b8a;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1200px-C_Sharp_logo.svg.png" style="width: 1.8em; height: 2em;"></i> </h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									C# is the most recent language I have been working with. I have been working with two of 
-									my other friends on a 3D FPS game that includes scripts that are written in the 
-									C# language. You can check the project out in the <a href="#projects" class="anim" data-dismiss="modal" > Projects tab.</a>
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-				</div>
-				<!-- END CS MODAL -->
-
-				<!-- START DOCKER MODAL -->
-				<div class="modal fade" id="dockerModal" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered" role="document">
-					  <div class="modal-content">
-						<div class="modal-header"">
-						  <h5 class="modal-title" id="dockerModal" style="color:black;"><b>C#</b> <i class="fab fa-docker fa-lg"></i> </h5>
-						  <button type="button" class="close login" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						  </button>
-						</div>
-						<div class="modal-body">
-						  <div class="container">
-							  <div class="row">
-
-								  <div class="col-md-12 col-sm-12 col-xs-12 col-12">
-								  <p class="lead">
-									I started learning Docker at the start of summer because I am interested in DevOps. 
-									Although I haven't really used it in any project, I plan to dive into Full Stack Development soon 
-									and want to start testing out the power of Docker. 
-								  </p>
-								  </div>
-
-							  </div>
-						  </div>
-						</div>
-						<div class="modal-footer">
-						</div>
-					  </div>
-					</div>
-
-				</div>
-				<!-- END DOCKER MODAL -->
-
-			</div>
-		</div>
-	</section>
-
-	<!-- End About Section -->
-
-
-	<!-- Start Projects Section-->
-	<section id="projects">
-		<div class="container">
-			<div class="row">
-				<div>
-
-					<div class="col-md-12 text-center">
-						<h2> My Work </h2>
-					</div>
-
-
-					<div class="col-md-12 col-sm-12">
-						<div id="proj-img" class="container">
-							<div class="row">
-
-
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="https://github.com/GovindN75/Flappy-Bird-AI" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/flappybird.png" class="img-responsive">
-											<figcaption>
-												<h4>Flappy Bird AI</h4>
-												<h5> I created this AI to play my rendition of Flappy Bird. It uses the pygame module and the NEAT algorithm</h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="https://github.com/GovindN75/Number-Predictor" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/mnist.png" class="img-responsive">
-											<figcaption>
-												<h4>Number Predictor</h4>
-												<h5>This number predictor uses a CNN built with Tensorflow and Keras to classify digits drawn on a Tkinter GUI.</h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="https://github.com/GovindN75/Sorting-Visualizer" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/visual.png" class="img-responsive">
-											<figcaption>
-												<h4> Sorting Visualizer</h4>
-												<h5> This sorting visualizer made with the Python language and Matplotlib helps one visualize a number of commonly used sorting algorithms. </h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="https://github.com/GovindN75/Battleship-Project" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/battle.png" class="img-responsive">
-											<figcaption>
-												<h4>Battleship Project</h4>
-												<h5> This is a grid based, Battleship inspired game with a couple of twists. Written in Java, this project was created by a friend and I as our final project for our Grade 12 CS class. Check out his portfolio <object><a href="https://danwei002.github.io/" target="_blank">here.</a></object> </h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="https://github.com/GovindN75/Coding-Bat-Solutions" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/codingbat.png" class="img-responsive">
-											<figcaption>
-												<h4>Coding Bat Solutions</h4>
-												<h5>A collection of all my solutions to the Java language questions on <object><a href="https://codingbat.com/java" target="_blank">codingbat.com</a></object>. Solutions to the Python language questions coming soon. </h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
-
-								<div class="grid mix col-md-4 col-sm-6 col-xs-12">
-									<a href="#" target="_blank">
-										<figure class="proj-desc">
-											<img src="img/unity.png" class="img-responsive">
-											<figcaption>
-												<h4>3D Parkour Platformer</h4>
-												<h5> A current work in progress. 2 of my friends and I are developing a 3D Platformer/FPS shooter hybrid game using the Unity Engine and the C# language. Includes cool weapons and mechanics. Github page coming soon.</h5>
-											</figcaption>
-										</figure>
-									</a>
-								</div>
+    <!--- Script Source Files -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--- End of Script Source Files -->
 
 
 
 
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <script>
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
 
+        const textArray = ["Programmer", "ML/AI Enthusisast", "Incoming 1A CS student at UWaterloo", " Aspiring Entrepreuneur"];
+        const typingDelay = 100;
+        const erasingDelay = 100;
+        const newTextDelay = 1000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
 
-	<!-- End Projects Section-->
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
 
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
 
-	<!-- Begin Contact Section -->
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
-	<section id="contact">
-		<h2 class="heading">Contact Me!</h2>
-		<div class="container">
-			
-			<br><br>
-			<div class="row">
-				<div class="col-md-6">
-					<form>
-						<input type="text" required="" placeholder="Name" name="text" class="form-control"><br>
-						<input type="text" required="" placeholder="Email" name="email" class="form-control"><br>
-						<textarea rows="6" placeholder="Message" required="" class="form-control"></textarea><br>
-						<center>
-							<button class="btn btn-info">Submit</button>
-						</center>
-						<br><br><br><br>
-					</form>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-5">
-					<br>
-					<p class="icn"><i class="fas fa-map-marker-alt fa-2x"></i> &nbsp;&nbsp; Toronto, ON, Canada </p>
-					<p class="icn"><i class="fas fa-phone fa-2x"></i> &nbsp;&nbsp; +1 (647)-676-2835 </p>
-					<p class="icn"><i class="fas fa-envelope fa-2x"></i> &nbsp;&nbsp; g4nair@uwaterloo.ca </p>
-					<hr>
-					<div class="media">
-						<ul class="socials" style="font-size: 22px;">
-							<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Contact Section -->
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 col-sm-12 col-xs-12">
-					<ul class="footer-icons" style="text-align:center; padding-top: 1.2vh;">
-						<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-						 <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
-					<p class="lead" style="font-size: 1rem; margin-top: 5%;">Made using:</p>
-					<ul class="lead" style="font-size: 1rem; color: black; list-style-type: none; padding: 0;">
-						<li><a href="https://getbootstrap.com/">Bootstrap 4.5.0</a></li>
-						<li><a href="https://fontawesome.com/">FontAwesome Icons</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
-					<p class="lead" style="font-size: 1.3em; padding-top: 2.5vh;">Govind Nair</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
+                    // Store hash
+                    var hash = this.hash;
 
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
 
-<!--- Script Source Files -->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!--- End of Script Source Files -->
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        var offsetTop = $('#skills').offset().top;
+        $(window).scroll(function () {
+            var height = $(window).height();
+            if ($(window).scrollTop() + height > offsetTop) {
+                jQuery('.skillbar').each(function () {
+                    jQuery(this).find('.skillbar-bar').animate({
+                        width: jQuery(this).attr('data-percent')
+                    }, 2000);
+                });
+            }
+        });
+    </script>
 
-<script>
-	const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
-
-const textArray = ["Programmer", "ML/AI Enthusisast", "Incoming 1A CS student at UWaterloo", " Aspiring Entrepreuneur"];
-const typingDelay = 100;
-const erasingDelay = 100;
-const newTextDelay = 1000 ; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-  if (charIndex < textArray[textArrayIndex].length) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-  	setTimeout(erase, newTextDelay);
-  }
-}
-
-function erase() {
-	if (charIndex > 0) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
-    cursorSpan.classList.remove("typing");
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
-});
-</script>
-<script>
-	$(document).ready(function(){
-	  // Add smooth scrolling to all links
-	  $("a").on('click', function(event) {
-	
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
-		  // Prevent default anchor click behavior
-		  event.preventDefault();
-	
-		  // Store hash
-		  var hash = this.hash;
-	
-		  // Using jQuery's animate() method to add smooth page scroll
-		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		  $('html, body').animate({
-			scrollTop: $(hash).offset().top
-		  }, 800, function(){
-	
-			// Add hash (#) to URL when done scrolling (default click behavior)
-			window.location.hash = hash;
-		  });
-		} // End if
-	  });
-	});
-</script>
-
-<script>
-	AOS.init();
-</script>
-<script>
-	  var offsetTop = $('#skills').offset().top;
-	$(window).scroll(function() {
-  var height = $(window).height();
-  if($(window).scrollTop()+height > offsetTop) {
-    jQuery('.skillbar').each(function(){
-      jQuery(this).find('.skillbar-bar').animate({
-        width:jQuery(this).attr('data-percent')
-      },2000);
-    });
-  }
-  });
-</script>
 </body>
+
 </html>
-
-
-
